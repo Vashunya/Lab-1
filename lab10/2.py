@@ -11,7 +11,6 @@ conn = psycopg2.connect(
 )
 cur = conn.cursor()
 
-# Создание таблиц
 cur.execute("""
 CREATE TABLE IF NOT EXISTS users (
     id SERIAL PRIMARY KEY,
